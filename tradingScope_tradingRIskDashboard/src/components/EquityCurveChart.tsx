@@ -57,7 +57,7 @@ export default function EquityCurveChart({
               tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`}
               domain={['dataMin - 1000', 'dataMax + 1000']}
             />
-            <Tooltip content={<CustomTooltip />} />
+            <Tooltip content={CustomTooltip} />
             <ReferenceLine
               y={startingBalance}
               stroke="var(--color-ink-muted)"

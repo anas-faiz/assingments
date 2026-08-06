@@ -1,4 +1,4 @@
-import type { TooltipProps } from 'recharts';
+import type { TooltipContentProps } from 'recharts';
 import { currency } from '../utils/constants';
 
 export interface EquityPoint {
@@ -11,7 +11,7 @@ export interface EquityPoint {
 export default function CustomTooltip({
   active,
   payload,
-}: TooltipProps<number, string>) {
+}: TooltipContentProps) {
   if (!active || !payload?.length) return null;
 
   const point = payload[0].payload as EquityPoint;
