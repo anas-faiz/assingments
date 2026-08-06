@@ -4,7 +4,7 @@ A dashboard that answers the one question a trader actually wants answered:
 **"Am I in danger of violating my account rules?"** — plus the performance
 numbers and trajectory that explain how they got there.
 
-Live: _add your deployed URL here after deploying_
+Live: [Live Link](https://trader-risk-dashboard-six-sooty.vercel.app/)
 Repo: [_GitHub_](https://github.com/anas-faiz/assingments/tree/main/tradingScope_tradingRIskDashboard)
 
 ## What I Built
