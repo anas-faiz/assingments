@@ -40,3 +40,43 @@ export interface CardProps {
   className?: string;
   style?: CSSProperties;
 }
+
+export interface LimitBarProps {
+  label: string;
+  used: number;
+  remaining: number;
+  limit: number;
+  usagePct: number;
+  level: RiskLevel;
+}
+
+export interface Thresholds {
+  approaching: number;
+  atRisk: number;
+}
+
+export interface Drawdown {
+  currentDrawdown: number;
+  remainingDrawdown: number;
+  usagePct: number;
+}
+
+export interface DailyLoss {
+  currentDayLoss: number;
+  remainingDailyLoss: number;
+  usagePct: number;
+}
+
+export interface RiskStatus {
+  level: RiskLevel;
+  label: string;
+}
+
+export  interface RiskIndicatorProps {
+  drawdown: Drawdown;
+  dailyLoss: DailyLoss;
+  riskStatus: RiskStatus;
+  thresholds: Thresholds;
+  maxDrawdown: number;
+  dailyLossLimit: number;
+}
