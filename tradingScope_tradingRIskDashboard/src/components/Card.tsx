@@ -1,4 +1,6 @@
-export default function Card({ title, eyebrow, children, className = '', style }) {
+import type { CardProps } from "../utils/types";
+
+export default function Card({ title, eyebrow, children, className = '', style }: CardProps) {
   return (
     <div
       className={`bg-surface-1 border border-border rounded-xl p-5 md:p-6 ${className}`}
