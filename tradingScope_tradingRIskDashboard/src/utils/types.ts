@@ -109,7 +109,7 @@ export interface StatsGridProps {
 
 type TradeDirection = 'Long' | 'Short';
 
-interface Trade {
+export interface Trade {
   id: string | number;
   label: string;
   asset: string;
@@ -119,4 +119,52 @@ interface Trade {
 
 export interface TradeTableProps {
   trades: Trade[];
+}
+
+export interface TradeStats {
+  totalPnl: number;
+  currentBalance: number;
+  winningTrades: number;
+  losingTrades: number;
+  breakEvenTrades: number;
+  winRate: number;
+  largestWin: Trade | null;
+  largestLoss: Trade | null;
+}
+
+export interface EquityPoint {
+  step: number;
+  label: string;
+  balance: number;
+  pnl: number;
+}
+
+export interface Drawdown {
+  peak: number;
+  currentDrawdown: number;
+  remainingDrawdown: number;
+  usagePct: number;
+}
+
+export interface DailyLoss {
+  currentDayLoss: number;
+  remainingDailyLoss: number;
+  usagePct: number;
+}
+
+export interface RiskThresholds {
+  approaching: number;
+  atRisk: number;
+}
+
+export interface RiskStatus {
+  level: RiskLevel;
+  label: string;
+  worstUsagePct: number;
+}
+
+export interface AssetBreakdown {
+  asset: string;
+  pnl: number;
+  trades: number;
 }
