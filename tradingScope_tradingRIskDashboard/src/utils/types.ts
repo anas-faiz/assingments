@@ -105,3 +105,18 @@ export interface Stats {
 export interface StatsGridProps {
   stats: Stats;
 }
+
+
+type TradeDirection = 'Long' | 'Short';
+
+interface Trade {
+  id: string | number;
+  label: string;
+  asset: string;
+  direction: TradeDirection;
+  pnl: number;
+}
+
+export interface TradeTableProps {
+  trades: Trade[];
+}
