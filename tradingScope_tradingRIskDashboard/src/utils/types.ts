@@ -80,3 +80,28 @@ export  interface RiskIndicatorProps {
   maxDrawdown: number;
   dailyLossLimit: number;
 }
+
+type StatTone = 'default' | 'positive' | 'negative';
+
+export interface StatProps {
+  label: string;
+  value: ReactNode;
+  tone?: StatTone;
+}
+
+export interface Trade {
+  pnl: number;
+}
+
+export interface Stats {
+  winningTrades: number;
+  losingTrades: number;
+  winRate: number;
+  largestWin: Trade | null;
+  largestLoss: Trade | null;
+  totalPnl: number;
+}
+
+export interface StatsGridProps {
+  stats: Stats;
+}
