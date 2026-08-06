@@ -5,7 +5,7 @@ A dashboard that answers the one question a trader actually wants answered:
 numbers and trajectory that explain how they got there.
 
 Live: _add your deployed URL here after deploying_
-Repo: _add your GitHub URL here_
+Repo: [_GitHub_](https://github.com/anas-faiz/assingments/tree/main/tradingScope_tradingRIskDashboard)
 
 ## What I Built
 
